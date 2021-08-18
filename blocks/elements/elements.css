@@ -1,0 +1,11 @@
+.elements {
+  width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 320px);
+  margin: calc((100vw - 320px) / (1280 - 320) * (48 - 36) + 36px) auto calc((100vw - 320px) / (1280 - 320) * (66 - 48) + 48px);
+}
+
+@media screen and (min-width: 1280px) {
+  .elements {
+    width: 880px;
+    margin: 48px auto 66px;
+  }
+}

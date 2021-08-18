@@ -1,0 +1,14 @@
+.header {
+  width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 320px);
+  margin: calc((100vw - 320px) / (1280 - 320) * (45 - 28) + 28px) auto 0;
+  padding-bottom: calc((100vw - 320px) / (1280 - 320) * (35 - 30) + 28px);
+  border-bottom: 1px solid #545454;
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    width: 880px;
+    margin: 45px auto 0;
+    padding-bottom: 37px;
+  }
+}
