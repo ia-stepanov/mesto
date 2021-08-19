@@ -17,4 +17,4 @@
 * Файловая структура Nested БЭМ.
 
 ## Ссылка на сайт:
-https://ia-stepanov.github.io/mesto/index.html
+https://ia-stepanov.github.io/mesto/
