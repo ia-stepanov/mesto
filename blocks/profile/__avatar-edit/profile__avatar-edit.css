@@ -1,9 +1,0 @@
-.profile__avatar-edit {
-  margin: 0 30px 0 0;
-}
-
-@media screen and (max-width: 767px) {
-  .profile__avatar-edit {
-    margin: 0 0 24px 0;
-  }
-}

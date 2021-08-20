@@ -1,16 +1,16 @@
 .profile__info {
   display: flex;
   flex-wrap: wrap;
-  max-width: calc((100vw - 320px) / (1280 - 320) * (545 - 282) + 282px);
+  max-width: calc((100vw - 320px) / (1280 - 320) * (480 - 285) + 285px);
 }
 
 @media screen and (min-width: 1280px) {
   .profile__info {
-    max-width: 545px;
+    max-width: 480px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .profile__info {
     justify-content: center;
   }

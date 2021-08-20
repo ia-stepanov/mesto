@@ -4,7 +4,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  letter-spacing: .5px;
   font-size: calc((100vw - 320px) / (1280 - 320) * (42 - 27) + 27px);
   font-weight: 500;
   line-height: calc((100vw - 320px) / (1280 - 320) * (48 - 32) + 32px);
@@ -17,10 +16,9 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .profile__name {
     max-width: 75%;
     margin: 0 0 5px 30px;
-    letter-spacing: .25px;
   }
 }
