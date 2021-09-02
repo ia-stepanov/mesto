@@ -25,81 +25,57 @@
         </section>
 
         <section class="elements">
-          <ul class="elements__list">
-            <li class="element">
-              <figure class="element__figure">
-                <img class="element__image" src="./images/elements/photo-grid-karachayevsk.jpg" alt="Кирилл Першин, Сентинский храм, г. Карачевск (фото)"/>
-                <figcaption class="element__info">
-                  <h2 class="element__caption">Карачаевск</h2>
-                  <button class="element__btn-like" type="button" title="Нравится"></button>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="element">
-              <figure class="element__figure">
-                <img class="element__image" src="./images/elements/photo-grid-elbrus.jpg" alt="Кирилл Першин, Гора Эльбрус (фото)"/>
-                <figcaption class="element__info">
-                  <h2 class="element__caption">Гора Эльбрус</h2>
-                  <button class="element__btn-like" type="button" title="Нравится"></button>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="element">
-              <figure class="element__figure">
-                <img class="element__image" src="./images/elements/photo-grid-dombay.jpg" alt="Кирилл Першин, Домбай (фото)"/>
-                <figcaption class="element__info">
-                  <h2 class="element__caption">Домбай</h2>
-                  <button class="element__btn-like" type="button" title="Нравится"></button>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="element">
-              <figure class="element__figure">
-                <img class="element__image" src="./images/elements/photo-grid-elbrus.jpg" alt="Кирилл Першин, Гора Эльбрус (фото)"/>
-                <figcaption class="element__info">
-                  <h2 class="element__caption">Гора Эльбрус</h2>
-                  <button class="element__btn-like" type="button" title="Нравится"></button>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="element">
-              <figure class="element__figure">
-                <img class="element__image" src="./images/elements/photo-grid-dombay.jpg" alt="Кирилл Першин, Домбай (фото)"/>
-                <figcaption class="element__info">
-                  <h2 class="element__caption">Домбай</h2>
-                  <button class="element__btn-like" type="button" title="Нравится"></button>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="element">
-              <figure class="element__figure">
-                <img class="element__image" src="./images/elements/photo-grid-karachayevsk.jpg" alt="Кирилл Першин, Сентинский храм, г. Карачевск (фото)"/>
-                <figcaption class="element__info">
-                  <h2 class="element__caption">Карачаево-Черкесия</h2>
-                  <button class="element__btn-like" type="button" title="Нравится"></button>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
+          <ul class="elements__list"></ul>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__author">&copy; 2021. Mesto Russia</p>
       </footer>
     </div>
-    <div class="popup">
+    <div class="popup popup-edit">
       <div class="popup__container">
-        <form class="popup__form" name="profile-edit">
+        <form class="popup__form" name="profileData">
           <h2 class="popup__title">Редактировать профиль</h2>
           <fieldset class="popup__fieldset">
-            <input class="popup__input" type="text" name="profileName" placeholder="Имя" required="" />
-            <input class="popup__input" type="text" name="profileAbout" placeholder="О себе" required="" />
+            <input class="popup__input" type="text" name="profileName" placeholder="Имя" required=""/>
+            <input class="popup__input" type="text" name="profileAbout" placeholder="О себе" required=""/>
             <button class="popup__btn-save" type="submit" title="Сохранить">Сохранить</button>
           </fieldset>
         </form>
         <button class="popup__btn-close" type="button" title="Закрыть"></button>
       </div>
     </div>
+    <div class="popup popup-add">
+      <div class="popup__container">
+        <form class="popup__form" name="placeData">
+          <h2 class="popup__title">Новое место</h2>
+          <fieldset class="popup__fieldset">
+            <input class="popup__input" type="text" name="placeName" placeholder="Название" required=""/>
+            <input class="popup__input" type="url" name="placeLink" placeholder="Ссылка на картинку" required=""/>
+            <button class="popup__btn-save" type="submit" title="Создать">Создать</button>
+          </fieldset>
+        </form>
+        <button class="popup__btn-close" type="button" title="Закрыть"></button>
+      </div>
+    </div>
+    <div class="popup popup-photos">
+      <div class="popup-photos__container">
+        <img class="popup-photos__image" src="#" alt="#">
+        <h2 class="popup-photos__title"></h2>
+        <button class="popup-photos__btn-close" type="button" title="Закрыть"></button>
+      </div>
+    </div>
+    <template id="card-template">
+      <figure class="element">
+        <img class="element__image" src="" alt="" title="Посмотреть в полном размере"/>
+        <button class="element__btn-trash" type="button" title="Удалить"></button>
+        <figcaption class="element__info">
+          <h2 class="element__caption"></h2>
+          <button class="element__btn-like" type="button" title="Нравится"></button>
+        </figcaption>
+      </figure>
+    </template>
+    <script src="./scripts/initialCards.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

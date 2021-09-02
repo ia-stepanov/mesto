@@ -3,11 +3,11 @@
   height: 282px;
   object-fit: cover;
   text-align: center;
-  transition: all .3s ease;
+  transition: all .4s ease;
 }
 
 .element__image:hover {
-  opacity: .9;
+  opacity: .95;
   cursor: pointer;
   transform: scale(1.01);
 }

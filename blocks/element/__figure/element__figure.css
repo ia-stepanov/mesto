@@ -1,5 +1,12 @@
 .element__figure {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   margin: 0;
+
+  position: relative;
+  width: 282px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(to top, #ccc 0%, #f6f6f6 75%, #fff 100%); */
 }
