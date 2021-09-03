@@ -1,6 +1,6 @@
 .footer {
   box-sizing: border-box;
-  width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 320px);
+  width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 300px);
   margin: 0 auto calc((100vw - 320px) / (1280 - 320) * (60 - 36) + 36px);
   padding-left: calc((100vw - 320px) / (1280 - 320) * (0 - 19) + 19px);
 }
