@@ -34,26 +34,30 @@
     </div>
     <div class="popup popup_edit">
       <div class="popup__container">
-        <form class="popup__form" name="profileData">
+        <form class="popup__form" name="profileData" novalidate>
           <h2 class="popup__title">Редактировать профиль</h2>
           <fieldset class="popup__fieldset">
-            <input class="popup__input" type="text" name="profileName" placeholder="Имя" required=""/>
-            <input class="popup__input" type="text" name="profileAbout" placeholder="О себе" required=""/>
-            <button class="popup__btn-save" type="submit" title="Сохранить">Сохранить</button>
+            <input class="popup__input" id="profile-name" type="text" name="profileName" placeholder="Имя" minlength="2" maxlength="40" required>
+            <span class="popup__input-error profile-name-error"></span>
+            <input class="popup__input" id="profile-about" type="text" name="profileAbout" placeholder="О себе" minlength="2" maxlength="200" required>
+            <span class="popup__input-error profile-about-error"></span>
           </fieldset>
+          <button class="popup__btn-save" type="submit" title="Сохранить">Сохранить</button>
         </form>
         <button class="popup__btn-close" type="button" title="Закрыть"></button>
       </div>
     </div>
     <div class="popup popup_add">
       <div class="popup__container">
-        <form class="popup__form" name="placeData">
+        <form class="popup__form" name="placeData" novalidate>
           <h2 class="popup__title">Новое место</h2>
           <fieldset class="popup__fieldset">
-            <input class="popup__input" type="text" name="placeName" placeholder="Название" required=""/>
-            <input class="popup__input" type="url" name="placeLink" placeholder="Ссылка на картинку" required=""/>
-            <button class="popup__btn-save" type="submit" title="Создать">Создать</button>
+            <input class="popup__input" id="place-name" type="text" name="placeName" placeholder="Название" minlength="2" maxlength="30" required>
+            <span class="popup__input-error place-name-error"></span>
+            <input class="popup__input" id="place-link" type="url" name="placeLink" placeholder="Ссылка на картинку" required>
+            <span class="popup__input-error place-link-error"></span>
           </fieldset>
+          <button class="popup__btn-save" type="submit" title="Создать">Создать</button>
         </form>
         <button class="popup__btn-close" type="button" title="Закрыть"></button>
       </div>
@@ -75,7 +79,8 @@
         </figcaption>
       </figure>
     </template>
-    <script src="./scripts/initialCards.js"></script>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/validate.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

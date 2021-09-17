@@ -1,6 +1,7 @@
 .popup__input {
+  position: relative;
   width: 100%;
-  margin: 0 0 28px;
+  margin: 29px 0 0;
   padding: 0 0 9px;
   outline: none;
   border: none;
@@ -10,6 +11,6 @@
   line-height: 17px;
 }
 
-.popup__input:last-of-type {
+.popup__input:first-of-type {
   margin: 0;
 }
