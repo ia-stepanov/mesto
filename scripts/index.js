@@ -74,8 +74,8 @@ function handleSubmitCard(evt) {
     link: inputPlaceLink.value
   });
   cardsElement.prepend(cardElement);
-  toggleButtonState(inputList, buttonElement, classData.disableButtonClass);
   popupAddForm.reset();
+  toggleButtonState(inputList, buttonElement, classData.disableButtonClass);
   closePopup(popupAdd);
 }
 
