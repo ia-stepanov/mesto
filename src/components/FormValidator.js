@@ -57,5 +57,4 @@ export default class FormValidator {
       return !inputElement.validity.valid;
     });
   }
-  
 }

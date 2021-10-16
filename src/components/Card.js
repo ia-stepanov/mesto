@@ -14,7 +14,7 @@ export default class Card {
     this._cardElement.querySelector('.element__btn-trash').addEventListener('click', (evt) => {
       this._handleRemoveButtonClick(evt);
     });
-    this._cardImage.addEventListener('click', () => this._handleCardClick());
+    this._cardsElementImage.addEventListener('click', () => this._handleCardClick());
   }
 
   _getTemplateElement() {
@@ -40,5 +40,4 @@ export default class Card {
 
     return this._cardElement;
   }
-  
 }
