@@ -1,0 +1,41 @@
+{
+  "name": "mesto",
+  "version": "1.0.0",
+  "description": "Место. Учебный проект Яндекс.Практикума",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ia-stepanov/mesto.git"
+  },
+  "keywords": [
+    "yandex-praktikum"
+  ],
+  "author": "Igor Stepanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ia-stepanov/mesto/issues"
+  },
+  "homepage": "https://github.com/ia-stepanov/mesto#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "autoprefixer": "^10.3.7",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.4.0",
+    "cssnano": "^5.0.8",
+    "html-webpack-plugin": "^5.4.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "postcss-loader": "^6.2.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "core-js": "^3.18.3"
+  }
+}
