@@ -24,12 +24,14 @@ const userInfo = new UserInfo({ profileNameSelector, profileAboutSelector });
 
 function createNewCard(item, cardSelector) {
   const card = new Card(item, cardSelector, () => {
-    const popupPhotos = new PopupWithImage(popupPhotosSelector);
-    popupPhotos.setEventListener();
     popupPhotos.open(item.link, item.name);
   });
   return card.generateCard();
 }
+
+
+const popupPhotos = new PopupWithImage(popupPhotosSelector);
+popupPhotos.setEventListener();
 
 
 const cards = new Section({
@@ -70,11 +72,13 @@ profileEditButton.addEventListener('click', () => {
   const profileForm = popupProfile.getFormElement();
   profileForm.elements.name.value = userInfoData.userName;
   profileForm.elements.description.value = userInfoData.userDescription;
+  popupProfileValidator.resetValidation();
   popupProfile.open();
 });
 
 
 addCardButton.addEventListener('click', () => {
   popupNewPlaceValidator.toggleButtonState();
+  popupNewPlaceValidator.resetValidation();
   popupNewPlace.open();
 });
