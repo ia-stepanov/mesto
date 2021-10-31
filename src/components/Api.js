@@ -72,7 +72,7 @@ export default class Api {
     }).then(this._checkResponse);
   }
 
-  changeProfileAvatar(body) {
+  updateProfileAvatar(body) {
     const requestUrl = this._baseUrl + `/users/me/avatar`;
     return fetch(requestUrl, {
       method: 'PATCH',
