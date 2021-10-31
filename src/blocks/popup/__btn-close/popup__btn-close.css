@@ -7,7 +7,12 @@
   outline: none;
   border: none;
   background: transparent url(../../../images/btn-close.svg) center center / cover no-repeat;
-  transition: all 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.popup__btn-close:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1280px) {
@@ -23,9 +28,4 @@
     right: 0px;
     top: -36px;
   }
-}
-
-.popup__btn-close:hover {
-  opacity: 0.6;
-  cursor: pointer;
 }

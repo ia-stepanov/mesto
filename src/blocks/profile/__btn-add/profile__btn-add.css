@@ -6,7 +6,7 @@
   border-radius: 2px;
   margin-left: auto;
   background: transparent url(../../../images/btn-add.svg) center center / 22px no-repeat;
-  transition: all .2s linear;
+  transition: opacity .2s linear;
 }
 
 .profile__btn-add:hover {

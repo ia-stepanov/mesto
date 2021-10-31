@@ -8,7 +8,12 @@
   color: #fff;
   font-size: calc((100vw - 320px) / (1280 - 320) * (18 - 14) + 14px);
   line-height: calc((100vw - 320px) / (1280 - 320) * (22 - 17) + 17px);
-  transition: all 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.popup__btn-save:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1280px) {
@@ -17,9 +22,4 @@
     font-size: 18px;
     line-height: 22px;
   }
-}
-
-.popup__btn-save:hover {
-  opacity: 0.8;
-  cursor: pointer;
 }
