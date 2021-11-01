@@ -5,7 +5,7 @@
   outline: none;
   border: none;
   background: transparent url(../../../images/btn-like-disabled.svg) center center / 22px no-repeat;
-  transition: all .2s ease;
+  transition: opacity .2s linear;
 }
 
 .element__btn-like:hover {
