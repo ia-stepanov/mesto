@@ -1,6 +1,7 @@
 export default class Card {
-  constructor({ data, isUserCard, cardSelector, handleCardClick, handleLikeButtonClick, handleRemoveButtonClick }) {
-    this._isUserCard = isUserCard;
+  constructor({ data, userId, cardSelector, handleCardClick, handleLikeButtonClick, handleRemoveButtonClick }) {
+    this._currentUserId = userId;
+    this._isUserCard = userId === data.owner._id;
     this._imageLink = data.link;
     this._imageName = data.name;
     this._name = data.name;
@@ -69,7 +70,7 @@ export default class Card {
   }
 
   _checkUserLike() {
-    return this._likes.some((item) => item._id === this._isUserCard);
+    return this._likes.some((item) => item._id === this._currentUserId);
   }
 
   getCardId() {

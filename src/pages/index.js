@@ -140,9 +140,8 @@ addCardButton.addEventListener('click', () => {
 
 
 function createNewCard(item, cardSelector) {
-  const isUserCard = userInfo.getUserId() === item.owner._id;
   const card = new Card({
-    data: item, isUserCard, cardSelector,
+    data: item, cardSelector, userId: userInfo.getUserId(),
     handleCardClick: () => {
       popupViewer.open(item.link, item.name);
     },
